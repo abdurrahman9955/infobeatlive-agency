@@ -29,8 +29,7 @@ export const Button = ({ children, variant, className, href}: { children: React.
       </div>
       
       <div className="relative z-10 text-center max-w-full px-6">
-         {/* <div className='-mt-5'><PromoBarHome /></div>  */}
-
+        
         <p className="text-lg sm:text-2xl font-extrabold tracking-tight text-blue-600 mb-6">
               Helping local businesses dominate
               <br/>

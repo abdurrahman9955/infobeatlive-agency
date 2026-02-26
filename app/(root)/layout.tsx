@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import Analytics from "../components/Analytics";
 const GA_MEASUREMENT_ID ="G-F1D82KF4XD";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"],});
@@ -32,6 +33,7 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
 
        </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+        <Analytics />
         {children}
       </body>
     </html>

@@ -50,29 +50,27 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({  children, title, category, dat
           </div>
         </div>
 
-        {/* Blog Content Section */}
         <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
           {children}
         </div>
 
-        {/* CTA Box */}
-        <div className="mt-20 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-10 text-white relative overflow-hidden shadow-2xl">
+        <div className="mt-20 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-6 text-white relative overflow-hidden shadow-2xl">
           <div className="relative z-10">
             <div className="flex items-center gap-3 mb-4">
                <Icon className="w-8 h-8 text-blue-200" />
-               <h3 className="text-2xl font-black">Ready to fix your {category.toLowerCase()}?</h3>
+               <h3 className="text-md font-black">Ready to fix your {category.toLowerCase()}?</h3>
             </div>
             <p className="text-blue-100 text-lg mb-8 max-w-xl">
               Join 1000+ local businesses that trust InfoBeatLive to turn their websites into growth machines.
             </p>
             <Link
               href="/#contact" 
-              className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-full font-black text-lg hover:scale-105 transition-transform"
+              className="inline-flex items-center gap-3 bg-white text-blue-600 px-6 py-4 
+              rounded-full font-black text-md hover:scale-105 transition-transform"
             >
               <Sparkles className="w-6 h-6" /> Get My Website Audit
             </Link>
           </div>
-          {/* Decorative Background Icon */}
           <Zap className="absolute top-1/2 right-[-20px] w-48 h-48 text-white/10 -translate-y-1/2 rotate-12" />
         </div>
       </div>

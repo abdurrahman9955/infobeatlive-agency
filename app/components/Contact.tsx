@@ -26,7 +26,7 @@ export default function Contact() {
   e.preventDefault();
   setSubmissionStatus('idle'); 
   setErrorMessage('');
-  setSubmitted(false)
+  setSubmitted(true)
 
   try {
      const response = await contacts.create({
