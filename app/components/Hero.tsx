@@ -2,8 +2,6 @@
 import React from 'react';
 import { SparklesIcon, ChartBarIcon } from '@heroicons/react/24/solid';
 import { Globe, Zap } from 'lucide-react';
-import Image from 'next/image';
-//import PromoBarHome from './home/promoBarHome';
 
 export const Button = ({ children, variant, className, href}: { children: React.ReactNode; variant: 'gradient' | 'outline'; className?: string; href: string; }) => {
   const baseClasses = 'font-bold rounded-full transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-4';
@@ -67,10 +65,10 @@ export const Button = ({ children, variant, className, href}: { children: React.
         </div>
 
          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <Button variant="gradient" className="w-full sm:w-auto px-8 py-4 text-xl" href="#contact">
+          <Button variant="gradient" className="w-full sm:w-auto px-6 sm:px-8 py-4 text-md sm:text-xl" href="#contact">
             <SparklesIcon className="h-7 w-7 mr-2 inline-block" />Get Your Website Now
           </Button>
-          <Button variant="outline" className="w-full sm:w-auto px-8 py-4 text-xl" href="#pricing">
+          <Button variant="outline" className="w-full sm:w-auto px-6 sm:px-8  py-4 text-md sm:text-xl" href="#pricing">
             <ChartBarIcon className="h-7 w-7 mr-2 inline-block" /> See Our All Plans Now
           </Button>
         </div>
