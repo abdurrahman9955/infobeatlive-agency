@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
-import { Calendar, Clock, ArrowRight, Sparkles, BookOpen, Globe, Zap, Megaphone, ShieldCheck, Cpu, ShoppingCart, Lock } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Sparkles, BookOpen, Globe, Zap, Megaphone, 
+ShieldCheck, Cpu, ShoppingCart, Lock } from 'lucide-react';
 import { ChartBarIcon } from '@heroicons/react/24/solid';
 
 const blogs = [
