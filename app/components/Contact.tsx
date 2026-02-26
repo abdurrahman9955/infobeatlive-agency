@@ -75,20 +75,6 @@ export default function Contact() {
               </p>
 
               <div className="mt-10 space-y-10 max-sm:px-4">
-              
-                {/* <div className="flex items-center  gap-5 group">
-                  <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 
-                  transition-transform group-hover:scale-110">
-                    <Mail size={28} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Us</p>
-                    <p className="text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer">
-                      <a href="mailto:admin@infobeatlive.com">infobeatlive@gmail.com</a>
-                      admin@infobeatlive.com
-                    </p>
-                  </div>
-                </div>  */}
 
                 <div className="flex items-center gap-5 group">
                   <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 
@@ -112,7 +98,6 @@ export default function Contact() {
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Us</p>
                     <p className="text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer">
                       <a href="mailto:admin@infobeatlive.com">infobeatlive@gmail.com</a>
-                      {/* admin@infobeatlive.com */}
                     </p>
                   </div>
                 </div>

@@ -15,7 +15,7 @@ export const setTokensAndUserId = (accessToken: string | null, refreshToken: str
 };
 
  export const SOCKET_BASE_URL: string =  'http://localhost:8080';
- export const BASE_URL: string =  'infobeatlive-agency-backend-production.up.railway.app/api';  
+ export const BASE_URL: string =  'https://infobeatlive-agency-backend-production.up.railway.app/api';  
  
  const api = axios.create({
     baseURL: BASE_URL,
