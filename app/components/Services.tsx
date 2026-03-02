@@ -59,7 +59,8 @@ export const Services: React.FC = () => {
               transition={{ delay: idx * 0.1 }}
               className="flex gap-4"
             >
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg 
+              shadow-blue-500/20">
                 {s.icon}
               </div>
               <div>
@@ -69,8 +70,9 @@ export const Services: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        
-        <div className="mt-6 p-8 rounded-2xl bg-gradient-to-r from-blue-700 to-indigo-700 flex flex-col md:flex-row items-center justify-between gap-8">
+       
+        <div className="mt-6 p-8 rounded-2xl bg-gradient-to-r from-blue-700 to-indigo-700 flex flex-col md:flex-row 
+          items-center justify-between gap-8">
           <div className="max-w-xl text-center md:text-left">
             <h3 className="text-2xl font-bold mb-2 text-white">Already have a website that needs work?</h3>
             <p className="text-blue-100">We offer custom fix-it and redesign services. Most fixes are completed within 48 hours.</p>

@@ -21,7 +21,8 @@ export const Process: React.FC = () => {
           <div className="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-blue-100 -z-10" />
           {steps.map((step, idx) => (
             <div key={idx} className="text-center group">
-              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 shadow-xl shadow-blue-200 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center 
+              text-2xl font-black mx-auto mb-6 shadow-xl shadow-blue-200 group-hover:scale-110 transition-transform">
                 {idx + 1}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>

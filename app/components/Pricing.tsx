@@ -22,8 +22,6 @@ function detectRegion(): Region {
 
     const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    //"ZA","GH","KE","EG","TZ","UG","RW","CM","SN","ET","DZ","MA"
-
     const africanCountries = ["NG"];
 
     if (region && africanCountries.includes(region)) {
@@ -34,7 +32,6 @@ function detectRegion(): Region {
     }
   } catch {}
 
-  //return "NIGERIA";
   return "INTERNATIONAL";
 }
 

@@ -11,8 +11,7 @@ import { Testimonials } from "../components/Testimonials";
 import Faqs from "../components/Faqs";
 import BlogsList from "../components/Blogs/Blogs";
 import { useEffect, useState } from "react";
-import { HomeIcon } from '@heroicons/react/24/solid';
-import { Mail, Globe, Award } from "lucide-react";
+import { Mail, Globe, Home, Award } from "lucide-react";
 
 type Language = 'en' | 'ha';
 type TabId = 'home' | 'services' | 'contact' | 'pricing' ;
@@ -44,11 +43,10 @@ export default function App() {
       </main>
       <Footer />
 
-
       <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t-4  px-6 py-3 flex 
       justify-between items-center rounded-t-2xl  border-blue-600 md:hidden z-50">
         {[
-          { id: 'home', icon: HomeIcon, label: lang === 'en' ? 'Home' : 'Gida', href: '#hero' },
+          { id: 'home', icon: Home, label: lang === 'en' ? 'Home' : 'Gida', href: '#hero' },
           { id: 'services', icon: Globe, label: lang === 'en' ? 'Services' : 'Bincika', href: '#services' },
           { id: 'contact', icon: Mail, label: lang === 'en' ? 'Contact' : 'Yi Rigista', href: '#contact' },
           { id: 'pricing', icon: Award, label: lang === 'en' ? 'Pricing' : 'Farashi', href: '#pricing' },
@@ -58,7 +56,7 @@ export default function App() {
             onClick={() => setActiveTab(item.id as TabId)}
             className={`flex flex-col items-center gap-1 ${activeTab === item.id ? 'text-blue-600' : 'text-slate-800'}`}
           >
-           
+         
               <a href={item.href}><item.icon size={22} fill={activeTab === item.id ? "currentColor" : "none"} /></a>
               <span className="text-[10px] font-bold uppercase tracking-wider"><a href={item.href}>{item.label}</a></span>
             

@@ -4,7 +4,6 @@ import {   Menu,  X, } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import { Button } from './Button';
-//import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
