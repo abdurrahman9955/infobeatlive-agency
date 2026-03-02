@@ -108,7 +108,7 @@ export default function Faqs() {
             <Sparkles size={16} />
             <span>Help Center</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">
+          <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-6 tracking-tight">
             Frequently Asked <br />
             <span className="text-blue-600 italic">Questions.</span>
           </h2>

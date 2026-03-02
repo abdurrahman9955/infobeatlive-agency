@@ -26,23 +26,23 @@ export const Footer: React.FC = () => (
         <div>
           <h4 className="text-white font-bold mb-6">Connect</h4>
           <div className="grid grid-cols-1 gap-4">
-            <a href="#" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
+            <a href="#contact" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
               hover:text-white transition-all"><MessageSquare size={18} /><span className='ml-2'>Contact us</span> </a>
-           
-            <a href="#" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
+          
+             <a href="tel:+2347011114377" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
               hover:text-white transition-all"><PhoneCall size={18} /> <span className='ml-2'>WhatsApp +23470 1111 4377</span></a>
 
-            <a href="#" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
-              hover:text-white transition-all"><Mail size={18} /><span className='ml-2'>admin@infobeatlive.com</span></a>
-           
+            <a href="mailto:infobeatlive@gmail.com" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
+              hover:text-white transition-all"><Mail size={18} /><span className='ml-2'>infobeatlive@gmail.com</span></a>
+          
           </div>
         </div>
      
         <div>
           <h4 className="text-white font-bold mb-6">Company</h4>
              <div className="flex flex-col mt-3 gap-3">
-             <a href="#" className="hover:text-white">Faqs</a>
-             <a href="#" className="hover:text-white">Blogs</a>
+             <a href="#faqs" className="hover:text-white">Faqs</a>
+             <a href="#blogs" className="hover:text-white">Blogs</a>
              <a href="#" className="hover:text-white">Privacy Policy</a>
              <a href="#" className="hover:text-white">Terms of Service</a>
         </div> 

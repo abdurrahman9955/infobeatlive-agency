@@ -241,7 +241,7 @@ export const Pricing: React.FC = () => {
       <div className="max-w-full mx-auto px-6">
 
         <SectionHeading subtitle="Simple Pricing" title="Clear pricing. Zero hidden fees."
-        description="Pricing is adjusted based on region to reflect local market conditions."/>
+        description="We design and build professional websites and tools that convert, scale, and perform."/>
 
         {/* <div className="flex justify-center hid den gap-2 mb-6">
           {(["NIGERIA", "INTERNATIONAL"] as Region[]).map((r) => (

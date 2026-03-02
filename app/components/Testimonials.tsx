@@ -41,7 +41,6 @@ export const Testimonials: React.FC = () => {
               <p className="text-slate-600 mb-6 italic text-sm">&apos;{t.content}&apos;</p>
               <div>
                 <p className="font-bold text-slate-900 text-base">{t.name}</p>
-                {/* <p className="text-xs text-blue-600 font-bold uppercase tracking-wide">{t.biz}</p> */}
               </div>
             </div>
           ))}

@@ -84,7 +84,7 @@ export default function Contact() {
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">WhatsApp / Recommended</p>
                     <p className="text-lg font-bold text-slate-900 hover:text-green-600 transition-colors cursor-pointer">
-                      +234 70 1111 4377
+                        <a href="tel:+2347011114377">+234 70 1111 4377</a>
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Us</p>
                     <p className="text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer">
-                      <a href="mailto:admin@infobeatlive.com">infobeatlive@gmail.com</a>
+                      <a href="infobeatlive@gmail.com">infobeatlive@gmail.com</a>
                     </p>
                   </div>
                 </div>
