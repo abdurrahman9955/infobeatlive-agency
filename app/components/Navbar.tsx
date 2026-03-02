@@ -1,9 +1,10 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import {  Menu,  X, } from 'lucide-react';
+import {   Menu,  X, } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { HomeIcon } from '@heroicons/react/24/solid';
 import { Button } from './Button';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,13 +36,13 @@ export const Navbar: React.FC = () => {
 
             <a href={'#'}>
              <div className='flex flex-row'>
-                 <Image className={`h-12 w-20  border text-white rounded-md object-cover mr-3 -mt-2
-                 ${scrolled ? ' border-cyan-800' : 'border-cyan-800'}`}
-                  width={40} height={40} src='/logo.png'  alt='logo'/>
-                  Info<span className="text-slate-900">Beat</span>Live
+                   <div className={`w-10 -mt-1 h-10  rounded-xl flex items-center 
+                   justify-center  shadow-lg bg-blue-600 text-white`}>
+                   <HomeIcon fill="currentColor" className='h-6 w-6' /> </div>
+                   <span className=' mx-2'> Info<span className="text-slate-900">Beat</span>Live</span>
              </div>
             </a>
-              
+            
             </span>
           </div>
           <div className="hidden md:block">

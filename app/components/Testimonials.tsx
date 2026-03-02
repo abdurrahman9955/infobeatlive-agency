@@ -22,7 +22,7 @@ export const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 bg-slate-50 overflow-hidden">
+    <section id="testimonials" className="py-6 bg-slate-50 overflow-hidden">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <SectionHeading 
           subtitle="Success Stories"

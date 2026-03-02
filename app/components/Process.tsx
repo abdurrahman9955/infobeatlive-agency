@@ -9,7 +9,7 @@ export const Process: React.FC = () => {
   ];
 
   return (
-    <section id="process" className="py-24 bg-white">
+    <section id="process" className="py-6 bg-white">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           subtitle="Our Framework"

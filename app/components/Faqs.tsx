@@ -99,9 +99,9 @@ export default function Faqs() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-20">
-    
-      <section id="faqs" className="pt-24 pb-12 px-4">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-6">
+   
+      <section id="faqs" className="pt-6 pb-6 px-4">
         <div className="max-w-full mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100
            text-blue-700 text-sm font-bold mb-6">

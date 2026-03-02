@@ -34,8 +34,8 @@ function detectRegion(): Region {
     }
   } catch {}
 
-  return "NIGERIA";
-  //return "INTERNATIONAL";
+  //return "NIGERIA";
+  return "INTERNATIONAL";
 }
 
 
@@ -201,20 +201,11 @@ export const Pricing: React.FC = () => {
     },
   };
 
-  const PricingTier = ({
-    tier,
-    sub = false,
-  }: {
-    tier: PricingTierProps;
-    sub?: boolean;
-  }) => (
-    <div
-      className={`p-8 rounded-3xl flex flex-col transition-all ${
-        tier.featured
-          ? "bg-blue-600 text-white shadow-2xl scale-105"
-          : "bg-white border border-slate-200 text-slate-900"
-      }`}
-    >
+  const PricingTier = ({ tier, sub = false }: { tier: PricingTierProps; sub?: boolean; }) => (
+    <div className={`p-8 rounded-3xl flex flex-col transition-all ${
+        tier.featured ? "bg-blue-600 text-white shadow-2xl scale-105"
+        : "bg-white border border-slate-200 text-slate-900"}`} >
+
       <h3 className="text-lg font-bold uppercase mb-4">{tier.name}</h3>
 
       <div className="text-4xl font-black mb-6">
@@ -251,13 +242,11 @@ export const Pricing: React.FC = () => {
   return (
     <section id="pricing" className="py-0 bg-slate-50">
       <div className="max-w-full mx-auto px-6">
-        <SectionHeading
-          subtitle="Simple Pricing"
-          title="Clear pricing. Zero hidden fees."
-          description="Pricing is adjusted based on region to reflect local market conditions."
-        />
 
-        <div className="flex justify-center hid den gap-2 mb-16">
+        <SectionHeading subtitle="Simple Pricing" title="Clear pricing. Zero hidden fees."
+        description="Pricing is adjusted based on region to reflect local market conditions."/>
+
+        {/* <div className="flex justify-center hid den gap-2 mb-6">
           {(["NIGERIA", "INTERNATIONAL"] as Region[]).map((r) => (
             <button
               key={r}
@@ -271,16 +260,16 @@ export const Pricing: React.FC = () => {
               {r === "NIGERIA" ? "Nigeria" : "International"}
             </button>
           ))}
-        </div>
+        </div> */}
 
-    
+   
         <div className="grid lg:grid-cols-3 gap-8">
           {current.builds.map((t) => (
             <PricingTier key={t.name} tier={t} />
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-24">
+        <div className="grid lg:grid-cols-3 gap-8 mt-6">
           {current.subscriptions.map((t) => ( <PricingTier key={t.name} tier={t} sub /> ))}
         </div>
       </div>

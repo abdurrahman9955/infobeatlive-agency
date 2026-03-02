@@ -66,7 +66,7 @@ export const WhoWeHelp: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-6 bg-white">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           subtitle="Who We Help"
@@ -74,13 +74,14 @@ export const WhoWeHelp: React.FC = () => {
           description="From local services to global brands, we design and build professional websites and tools that convert, scale, and perform."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
           {niches.map((niche, idx) => (
             <motion.div
               key={idx}
               whileHover={{ y: -6 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-xl transition-all"
+              className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 
+              hover:shadow-xl transition-all"
             >
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                 {niche.icon}
@@ -108,7 +109,7 @@ export const WhoWeHelp: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-6 text-center">
           <p className="text-lg text-slate-600">
             Don’t see your industry?
             <span className="font-semibold text-slate-900">

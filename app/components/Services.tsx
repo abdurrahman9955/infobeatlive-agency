@@ -40,7 +40,7 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-slate-900 text-white">
+    <section id="services" className="py-6 bg-slate-900 text-white">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           light
@@ -70,7 +70,7 @@ export const Services: React.FC = () => {
           ))}
         </div>
         
-        <div className="mt-20 p-8 rounded-2xl bg-gradient-to-r from-blue-700 to-indigo-700 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="mt-6 p-8 rounded-2xl bg-gradient-to-r from-blue-700 to-indigo-700 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="max-w-xl text-center md:text-left">
             <h3 className="text-2xl font-bold mb-2 text-white">Already have a website that needs work?</h3>
             <p className="text-blue-100">We offer custom fix-it and redesign services. Most fixes are completed within 48 hours.</p>

@@ -118,12 +118,12 @@ const blogs = [
 
 export default function BlogsList() {
   return (
-    <div id="blogs" className="bg-slate-50 min-h-screen py-24 px-6">
+    <div id="blogs" className="bg-slate-50 min-h-screen py-6 px-6">
       <div className="max-w-full mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Resources for Growth</h2>
           <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
-            Inside the InfoBeat<span className="text-blue-600">Live</span> Blog
+            Inside the InfoBeat<span className="text-blue-600">Live</span> Blogs
           </h1>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg font-medium">
             Expert insights to help your local business dominate the digital landscape and turn traffic into revenue.

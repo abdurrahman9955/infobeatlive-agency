@@ -10,7 +10,7 @@ interface SectionHeadingProps {
 }
 
 export const SectionHeading: React.FC<SectionHeadingProps> = ({ subtitle, title, description, light = false }) => (
-  <div className="mb-16 text-center">
+  <div className="mb-6 text-center">
     <motion.span 
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
