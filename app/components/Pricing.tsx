@@ -42,49 +42,77 @@ export const Pricing: React.FC = () => {
 
   const pricing = {
     NIGERIA: {
-      builds: [
-        {
-          name: "Starter Build",
-          price: "₦120,000",
-          features: [
-            "Up to 5 Pages",
-            "Mobile Optimized",
-            "Contact Form",
-            "Basic SEO Setup",
-            "1 Round Revision",
-          ],
-        },
-        {
-          name: "Business Pro",
-          price: "₦250,000",
-          featured: true,
-          features: [
-            "Up to 10 Pages",
-            "CMS for Blogging",
-            "Online Booking Integration",
-            "Advanced SEO",
-            "Google Business Setup",
-          ],
-        },
-        {
-          name: "Growth Engine",
-          price: "₦500,000",
-          features: [
-            "Unlimited Pages",
-            "AI Chatbot",
-            "Marketing Automations",
-            "Social Media Setup",
-            "VIP Priority Support",
-          ],
-        },
-      ],
+      // builds: [
+      //   {
+      //     name: "Starter Build",
+      //     price: "₦120,000",
+      //     features: [
+      //       "Up to 5 Pages",
+      //       "Mobile Optimized",
+      //       "Contact Form",
+      //       "Basic SEO Setup",
+      //       "1 Round Revision",
+      //     ],
+      //   },
+      //   {
+      //     name: "Business Pro",
+      //     price: "₦250,000",
+      //     featured: true,
+      //     features: [
+      //       "Up to 10 Pages",
+      //       "CMS for Blogging",
+      //       "Online Booking Integration",
+      //       "Advanced SEO",
+      //       "Google Business Setup",
+      //     ],
+      //   },
+      //   {
+      //     name: "Growth Engine",
+      //     price: "₦500,000",
+      //     features: [
+      //       "Unlimited Pages",
+      //       "AI Chatbot",
+      //       "Marketing Automations",
+      //       "Social Media Setup",
+      //       "VIP Priority Support",
+      //     ],
+      //   },
+      // ],
+      
       subscriptions: [
         {
           name: "Maintain",
           price: "₦30,000",
           interval: "mo",
           features: [
-            "Hosting Included",
+            "Website hosting",
+            "Contact forms",
+            "Booking system",
+            "Email notifications",
+            "Basic SMS/WhatsApp alerts",
+  
+            "Security & Backups",
+            "Technical Support",
+            "SEO Content",
+            "Minor Content Edits",
+          ],
+        },
+        
+        {
+          name: "Growth",
+          price: "₦50,000",
+          interval: "mo",
+          featured: true,
+          features: [
+            "Website + hosting",
+            "Contact forms",
+            "Website chat",
+            "Booking & calendar sync",
+            "Automated SMS / WhatsApp / email",
+            "Follow-up reminders",
+            "Basic CRM",
+
+            "SEO Content",
             "Security & Backups",
             "Technical Support",
             "Monthly Analytics",
@@ -92,26 +120,21 @@ export const Pricing: React.FC = () => {
           ],
         },
         {
-          name: "Growth",
+          name: "Scale",
           price: "₦100,000",
           interval: "mo",
-          featured: true,
           features: [
-            "Everything in Maintain",
-            "SEO Content",
-            "Weekly Blog Posts",
-            "Reputation Management",
-            "Lead Tracking Dashboard",
-          ],
-        },
-        {
-          name: "Scale",
-          price: "₦300,000",
-          interval: "mo",
-          features: [
-            "Everything in Growth",
+            "Website + hosting",
+            "Contact forms",
+            "Website chat",
+            "Booking & calendar sync",
+            "Automated SMS / WhatsApp / email",
+            "Follow-up reminders",
+            "Advanced CRM",
+
+            "Advanced automations",
             "Paid Ads Management",
-            "Daily Social Engagement",
+            "Monthly optimization",
             "Dedicated Account Manager",
             "Unlimited Updates",
           ],
@@ -120,52 +143,58 @@ export const Pricing: React.FC = () => {
     },
 
     INTERNATIONAL: {
-      builds: [
-        {
-          name: "Starter Build",
-          price: "$499",
-          features: [
-            "Up to 5 Pages",
-            "Mobile Optimized",
-            "Contact Form",
-            "Basic SEO Setup",
-            "1 Round Revision",
-          ],
-        },
-        {
-          name: "Business Pro",
-          price: "$1,499",
-          featured: true,
-          features: [
-            "Up 10 Pages",
-            "CMS for Blogging",
-            "Online Booking Integration",
-            "Advanced SEO",
-            "Google Business Setup",
-          ],
-        },
-        {
-          name: "Growth Engine",
-          price: "$3000",
-          features: [
-            "Unlimited Pages",
-            "AI Chatbot",
-            "Marketing Automations",
-            "Social Media Setup",
-            "VIP Priority Support",
-          ],
-        },
-      ],
+      // builds: [
+      //   {
+      //     name: "Starter Build",
+      //     price: "$499",
+      //     features: [
+      //       "Up to 5 Pages",
+      //       "Mobile Optimized",
+      //       "Contact Form",
+      //       "Basic SEO Setup",
+      //       "1 Round Revision",
+      //     ],
+      //   },
+      //   {
+      //     name: "Business Pro",
+      //     price: "$1,499",
+      //     featured: true,
+      //     features: [
+      //       "Up 10 Pages",
+      //       "CMS for Blogging",
+      //       "Online Booking Integration",
+      //       "Advanced SEO",
+      //       "Google Business Setup",
+      //     ],
+      //   },
+      //   {
+      //     name: "Growth Engine",
+      //     price: "$3000",
+      //     features: [
+      //       "Unlimited Pages",
+      //       "AI Chatbot",
+      //       "Marketing Automations",
+      //       "Social Media Setup",
+      //       "VIP Priority Support",
+      //     ],
+      //   },
+      // ],
+      
       subscriptions: [
         {
           name: "Maintain",
           price: "$99",
           interval: "mo",
           features: [
-            "Hosting Included",
+            "Website hosting",
+            "Contact forms",
+            "Booking system",
+            "Email notifications",
+            "Basic SMS/WhatsApp alerts",
+  
             "Security & Backups",
             "Technical Support",
-            "Monthly Analytics",
+            "SEO Content",
             "Minor Content Edits",
           ],
         },
@@ -175,21 +204,39 @@ export const Pricing: React.FC = () => {
           interval: "mo",
           featured: true,
           features: [
-            "Everything in Maintain",
+            "Website + hosting",
+            "Contact forms",
+            "Website chat",
+            "Booking & calendar sync",
+            "Automated SMS / WhatsApp / email",
+            "Follow-up reminders",
+            "Basic CRM",
+
             "SEO Content",
-            "Weekly Blog Posts",
-            "Reputation Management",
-            "Lead Tracking Dashboard",
+            "Security & Backups",
+            "Technical Support",
+            "Monthly Analytics",
+            "Minor Content Edits",
+
           ],
         },
         {
           name: "Scale",
-          price: "$499",
+          price: "$299",
           interval: "mo",
           features: [
-            "Everything in Growth",
+
+            "Website + hosting",
+            "Contact forms",
+            "Website chat",
+            "Booking & calendar sync",
+            "Automated SMS / WhatsApp / email",
+            "Follow-up reminders",
+            "Advanced CRM",
+
+            "Advanced automations",
             "Paid Ads Management",
-            "Daily Social Engagement",
+            "Monthly optimization",
             "Dedicated Account Manager",
             "Unlimited Updates",
           ],
@@ -242,8 +289,8 @@ export const Pricing: React.FC = () => {
 
         <SectionHeading subtitle="Simple Pricing" title="Clear pricing. Zero hidden fees."
         description="We design and build professional websites and tools that convert, scale, and perform."/>
-
-        {/* <div className="flex justify-center hid den gap-2 mb-6">
+{/* 
+        <div className="flex justify-center hid den gap-2 mb-6">
           {(["NIGERIA", "INTERNATIONAL"] as Region[]).map((r) => (
             <button
               key={r}
@@ -259,12 +306,12 @@ export const Pricing: React.FC = () => {
           ))}
         </div> */}
 
-   
+{/*    
         <div className="grid lg:grid-cols-3 gap-8">
           {current.builds.map((t) => (
             <PricingTier key={t.name} tier={t} />
           ))}
-        </div>
+        </div> */}
 
         <div className="grid lg:grid-cols-3 gap-8 mt-6">
           {current.subscriptions.map((t) => ( <PricingTier key={t.name} tier={t} sub /> ))}
