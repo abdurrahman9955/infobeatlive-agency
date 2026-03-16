@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
                   {link.name}
                 </a>
               ))}
-              <Button href="#contact" variant="primary" className="py-2 text-sm max-lg:hidden">Send Message</Button>
+              <Button href="#contact" variant="primary" className="py-2 text-sm max-lg:hidden">Book Free Consultation</Button>
             </div>
           </div>
           <div className="md:hidden">
@@ -88,7 +88,7 @@ export const Navbar: React.FC = () => {
               ))}
 
               <div className="px-3 pt-4">
-                <Button href="#contact" className="w-full">Send Message</Button>
+                <Button href="#contact" className="w-full">Book Free Consultation</Button>
               </div>
              
             </div>

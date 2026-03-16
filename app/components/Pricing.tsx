@@ -192,10 +192,10 @@ export const Pricing: React.FC = () => {
             "Email notifications",
             "Basic SMS/WhatsApp alerts",
   
-            "Security & Backups",
-            "Technical Support",
+            // "Security & Backups",
+            // "Technical Support",
             "SEO Content",
-            "Minor Content Edits",
+            // "Minor Content Edits",
           ],
         },
         {
@@ -207,36 +207,38 @@ export const Pricing: React.FC = () => {
             "Website + hosting",
             "Contact forms",
             "Website chat",
+            "Email notifications",
             "Booking & calendar sync",
             "Automated SMS / WhatsApp / email",
             "Follow-up reminders",
             "Basic CRM",
 
             "SEO Content",
-            "Security & Backups",
-            "Technical Support",
+            // "Security & Backups",
+            // "Technical Support",
             "Monthly Analytics",
-            "Minor Content Edits",
+            // "Minor Content Edits",
 
           ],
         },
         {
           name: "Scale",
-          price: "$299",
+          price: "$499",
           interval: "mo",
           features: [
 
             "Website + hosting",
             "Contact forms",
             "Website chat",
+            "Email notifications",
             "Booking & calendar sync",
             "Automated SMS / WhatsApp / email",
             "Follow-up reminders",
             "Advanced CRM",
 
             "Advanced automations",
-            "Paid Ads Management",
-            "Monthly optimization",
+            // "Paid Ads Management",
+            "Full AI voice agents",
             "Dedicated Account Manager",
             "Unlimited Updates",
           ],
@@ -252,7 +254,7 @@ export const Pricing: React.FC = () => {
 
       <h3 className="text-lg font-bold uppercase mb-4">{tier.name}</h3>
 
-      <div className="text-4xl font-black mb-6">
+      <div className="text-3xl font-black mb-6">
         {tier.price}
         {sub && <span className="text-sm font-medium opacity-80">/mo</span>}
       </div>

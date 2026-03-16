@@ -65,7 +65,8 @@ export const Button = ({ children, variant, className, href}: { children: React.
 
          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button variant="gradient" className="w-full sm:w-auto px-6 sm:px-8 py-4 text-md sm:text-xl" href="#contact">
-            <SparklesIcon className="h-7 w-7 mr-2 inline-block" />Get Your Website Now
+            <SparklesIcon className="h-7 w-7 mr-2 inline-block" />Book Free Consultation
+
           </Button>
           <Button variant="outline" className="w-full sm:w-auto px-6 sm:px-8  py-4 text-md sm:text-xl" href="#pricing">
             <ChartBarIcon className="h-7 w-7 mr-2 inline-block" /> See Our All Plans Now

@@ -5,7 +5,7 @@ import { Plus, Minus, MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
 const faqData = [
   {
     question: "How long does a typical website project take?",
-    answer: "Most custom website builds take between 1 to 4 weeks from kickoff to launch. This timeline depends on the complexity of the site, the number of pages, and how quickly feedback is provided during the design phase."
+    answer: "Most custom website builds take between 1 to 7 days from kickoff to launch. This timeline depends on the complexity of the site, the number of pages, and how quickly feedback is provided during the design phase."
   },
   {
     question: "Do you offer monthly maintenance and SEO services?",
@@ -25,20 +25,20 @@ const faqData = [
   },
   {
     question: "How much does a new website typically cost?",
-    answer: "Pricing varies based on project scope, but most professional small business sites start around $499 to $5000. We provide custom quotes after our initial discovery call to ensure you only pay for the features your business actually needs."
+    answer: "Pricing varies based on project scope, but most professional small business sites start around $99 to $5000 monthly. We provide custom quotes after our initial discovery call to ensure you only pay for the features your business actually needs."
   },
-  {
-    question: "Do I own the website once it is finished?",
-    answer: "Yes, 100%. Once the final payment is made, you own the code, the design, and the content. We don't believe in 'hostage' contracts—you are free to move your site elsewhere, though most clients stay for our premium maintenance."
-  },
+  // {
+  //   question: "Do I own the website once it is finished?",
+  //   answer: "Yes, 100%. Once the final payment is made, you own the code, the design, and the content. We don't believe in 'hostage' contracts—you are free to move your site elsewhere, though most clients stay for our premium maintenance."
+  // },
   {
     question: "Do you provide the text and images for the site?",
     answer: "We offer professional copywriting and stock photography selection as an add-on service. However, if you prefer to provide your own content, we will guide you on the best structure and SEO-friendly headlines to use."
   },
-  {
-    question: "Will I be able to update the website myself?",
-    answer: "Yes. We build primarily on user-friendly platforms and provide a 1-on-1 training session after launch. You'll be able to swap images, update text, and add blog posts without needing to touch a single line of code."
-  },
+  // {
+  //   question: "Will I be able to update the website myself?",
+  //   answer: "Yes. We build primarily on user-friendly platforms and provide a 1-on-1 training session after launch. You'll be able to swap images, update text, and add blog posts without needing to touch a single line of code."
+  // },
   {
     question: "What happens if something breaks after launch?",
     answer: "Every site comes with a 30-day post-launch support window where we fix any bugs for free. For long-term peace of mind, our maintenance plans include daily backups and 24/7 uptime monitoring."
