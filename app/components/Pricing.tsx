@@ -24,11 +24,13 @@ function detectRegion(): Region {
 
     const africanCountries = ["NG"];
 
+    // INTERNATIONAL NIGERIA
+
     if (region && africanCountries.includes(region)) {
-      return "NIGERIA";
+      return "INTERNATIONAL";
     }
     if (tz?.startsWith("Africa/")) {
-      return "NIGERIA";
+      return "INTERNATIONAL";
     }
   } catch {}
 
@@ -81,7 +83,7 @@ export const Pricing: React.FC = () => {
       
       subscriptions: [
         {
-          name: "Maintain",
+          name: "Starter",
           price: "₦30,000",
           interval: "mo",
           features: [
@@ -179,68 +181,60 @@ export const Pricing: React.FC = () => {
       //     ],
       //   },
       // ],
-      
+     
       subscriptions: [
         {
-          name: "Maintain",
-          price: "$99",
+          name: "Starter",
+          price: "$299",
           interval: "mo",
           features: [
-            "Website hosting",
+            "Website + hosting",
             "Contact forms",
-            "Booking system",
+            "Website chat",
             "Email notifications",
-            "Basic SMS/WhatsApp alerts",
-  
-            // "Security & Backups",
-            // "Technical Support",
-            "SEO Content",
-            // "Minor Content Edits",
+            "Booking & calendar sync",
+            "Automated SMS / WhatsApp / email",
+            "Follow-up reminders",
+            "CRM & Automations",
+            "Full AI voice agents",
           ],
         },
         {
           name: "Growth",
-          price: "$199",
+          price: "$1499",
           interval: "mo",
           featured: true,
           features: [
-            "Website + hosting",
-            "Contact forms",
-            "Website chat",
-            "Email notifications",
-            "Booking & calendar sync",
-            "Automated SMS / WhatsApp / email",
-            "Follow-up reminders",
-            "Basic CRM",
-
-            "SEO Content",
-            // "Security & Backups",
-            // "Technical Support",
-            "Monthly Analytics",
-            // "Minor Content Edits",
-
-          ],
-        },
-        {
-          name: "Scale",
-          price: "$499",
-          interval: "mo",
-          features: [
-
-            "Website + hosting",
-            "Contact forms",
-            "Website chat",
-            "Email notifications",
-            "Booking & calendar sync",
-            "Automated SMS / WhatsApp / email",
-            "Follow-up reminders",
-            "Advanced CRM",
-
-            "Advanced automations",
-            // "Paid Ads Management",
-            "Full AI voice agents",
+            "Everything In  Starter +",
+            "10–15 posts/month per platform",
+            "TikTok + Instagram + Facebook",
+            "AI-generated videos",
+            "Lead qualification calls",
+            "Appointment booking",
+            "Auto-replies (comments + DMs)",
             "Dedicated Account Manager",
             "Unlimited Updates",
+          ],
+        },
+      
+        {
+          name: "Scale",
+          price: "$3000",
+          interval: "mo",
+          features: [
+         
+            "Everything In Growth +",
+            "Paid Ads Management",
+            "Ad campaign setup",
+          
+            "AI-generated Ads Content",
+            "Weekly reporting",
+            "Meta + Google Ads",
+
+            "24/7 Dedicated Support",
+            "Dedicated Account Manager",
+            "Unlimited Updates",
+
           ],
         },
       ],
