@@ -23,26 +23,6 @@ type Niche = {
 export const WhoWeHelp: React.FC = () => {
   const niches: Niche[] = [
     {
-      title: "Restaurants & Hospitality",
-      list: ["Restaurants", "Cafés", "Hotels", "Fine Dining",  "Boutique"],
-      icon: <Utensils className="text-blue-600" />,
-    },
-    {
-      title: "Retail & Ecommerce",
-      list: ["Online Stores", "Local Shops", "Brands", "Marketplaces", "Co-working Spaces"],
-      icon: <Store className="text-blue-600" />,
-    },
-    {
-      title: "Professional Services",
-      list: ["Law Firms", "Accountants", "Consultants", "Real Estate",  "Architectural Firms"],
-      icon: <ShieldCheck className="text-blue-600" />,
-    },
-    {
-      title: "Education & Automobile",
-      list: ["Schools", "Training Centers", "Coaches", "Auto Repair", "Car Detailers"],
-      icon: <GraduationCap className="text-blue-600" />,
-    },
-    {
       title: "Home & Field Services",
       list: ["Plumbers", "Electricians", "HVAC Specialists", "Cleaning Services", "General Contractors"],
       icon: <Wrench className="text-blue-600" />,
@@ -62,7 +42,27 @@ export const WhoWeHelp: React.FC = () => {
       list: ["Repair Companies","Landscapers", "Roofing Experts", "Painters", "Pool Maintenance"],
       icon: <Droplets className="text-blue-600" />,
     },
- 
+    {
+      title: "Restaurants & Hospitality",
+      list: ["Restaurants", "Cafés", "Hotels", "Fine Dining",  "Boutique"],
+      icon: <Utensils className="text-blue-600" />,
+    },
+    {
+      title: "Retail & Ecommerce",
+      list: ["Online Stores", "Local Shops", "Brands", "Marketplaces", "Co-working Spaces"],
+      icon: <Store className="text-blue-600" />,
+    },
+    {
+      title: "Professional Services",
+      list: ["Law Firms", "Accountants", "Consultants", "Real Estate",  "Architectural Firms"],
+      icon: <ShieldCheck className="text-blue-600" />,
+    },
+    {
+      title: "Education & Automobile",
+      list: ["Schools", "Training Centers", "Coaches", "Auto Repair", "Car Detailers"],
+      icon: <GraduationCap className="text-blue-600" />,
+    },
+
   ];
 
   return (

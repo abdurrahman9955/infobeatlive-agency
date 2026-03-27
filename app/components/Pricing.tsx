@@ -181,7 +181,7 @@ export const Pricing: React.FC = () => {
       //     ],
       //   },
       // ],
-     
+    
       subscriptions: [
         {
           name: "Starter",
@@ -193,7 +193,6 @@ export const Pricing: React.FC = () => {
             "Website chat",
             "Email notifications",
             "Booking & calendar sync",
-            "Automated SMS / WhatsApp / email",
             "Follow-up reminders",
             "CRM & Automations",
             "Full AI voice agents",
@@ -206,12 +205,11 @@ export const Pricing: React.FC = () => {
           featured: true,
           features: [
             "Everything In  Starter +",
-            "10–15 posts/month per platform",
-            "TikTok + Instagram + Facebook",
-            "AI-generated videos",
+            "Automated SMS / email",
             "Lead qualification calls",
             "Appointment booking",
-            "Auto-replies (comments + DMs)",
+            "Email and phone outreach",
+            "Weekly reporting",
             "Dedicated Account Manager",
             "Unlimited Updates",
           ],
@@ -222,16 +220,12 @@ export const Pricing: React.FC = () => {
           price: "$3000",
           interval: "mo",
           features: [
-         
             "Everything In Growth +",
             "Paid Ads Management",
             "Ad campaign setup",
-          
             "AI-generated Ads Content",
             "Weekly reporting",
             "Meta + Google Ads",
-
-            "24/7 Dedicated Support",
             "Dedicated Account Manager",
             "Unlimited Updates",
 

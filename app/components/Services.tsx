@@ -8,6 +8,11 @@ import { SectionHeading } from './SectionHeading';
 export const Services: React.FC = () => {
   const services = [
     {
+      icon: <Bot size={24} />,
+      title: "AI & Automation",
+      text: "Auto-reply to leads, online booking systems, and AI chatbots to handle queries 24/7."
+    },
+    {
       icon: <Globe size={24} />,
       title: "Custom Web Builds",
       text: "Lightning-fast, mobile-first websites designed to rank on Google and capture leads."
@@ -32,11 +37,6 @@ export const Services: React.FC = () => {
       title: "Social Media Setup",
       text: "Strategic setup and management for Facebook, Instagram, and TikTok to keep you top-of-mind."
     },
-    {
-      icon: <Bot size={24} />,
-      title: "AI & Automation",
-      text: "Auto-reply to leads, online booking systems, and AI chatbots to handle queries 24/7."
-    }
   ];
 
   return (
