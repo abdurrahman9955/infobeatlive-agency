@@ -44,43 +44,6 @@ export const Pricing: React.FC = () => {
 
   const pricing = {
     NIGERIA: {
-      // builds: [
-      //   {
-      //     name: "Starter Build",
-      //     price: "₦120,000",
-      //     features: [
-      //       "Up to 5 Pages",
-      //       "Mobile Optimized",
-      //       "Contact Form",
-      //       "Basic SEO Setup",
-      //       "1 Round Revision",
-      //     ],
-      //   },
-      //   {
-      //     name: "Business Pro",
-      //     price: "₦250,000",
-      //     featured: true,
-      //     features: [
-      //       "Up to 10 Pages",
-      //       "CMS for Blogging",
-      //       "Online Booking Integration",
-      //       "Advanced SEO",
-      //       "Google Business Setup",
-      //     ],
-      //   },
-      //   {
-      //     name: "Growth Engine",
-      //     price: "₦500,000",
-      //     features: [
-      //       "Unlimited Pages",
-      //       "AI Chatbot",
-      //       "Marketing Automations",
-      //       "Social Media Setup",
-      //       "VIP Priority Support",
-      //     ],
-      //   },
-      // ],
-      
       subscriptions: [
         {
           name: "Starter",
@@ -145,43 +108,6 @@ export const Pricing: React.FC = () => {
     },
 
     INTERNATIONAL: {
-      // builds: [
-      //   {
-      //     name: "Starter Build",
-      //     price: "$499",
-      //     features: [
-      //       "Up to 5 Pages",
-      //       "Mobile Optimized",
-      //       "Contact Form",
-      //       "Basic SEO Setup",
-      //       "1 Round Revision",
-      //     ],
-      //   },
-      //   {
-      //     name: "Business Pro",
-      //     price: "$1,499",
-      //     featured: true,
-      //     features: [
-      //       "Up 10 Pages",
-      //       "CMS for Blogging",
-      //       "Online Booking Integration",
-      //       "Advanced SEO",
-      //       "Google Business Setup",
-      //     ],
-      //   },
-      //   {
-      //     name: "Growth Engine",
-      //     price: "$3000",
-      //     features: [
-      //       "Unlimited Pages",
-      //       "AI Chatbot",
-      //       "Marketing Automations",
-      //       "Social Media Setup",
-      //       "VIP Priority Support",
-      //     ],
-      //   },
-      // ],
-    
       subscriptions: [
         {
           name: "Starter",
@@ -195,7 +121,7 @@ export const Pricing: React.FC = () => {
             "Booking & calendar sync",
             "Follow-up reminders",
             "CRM & Automations",
-            "Full AI voice agents",
+            "Full ai voice call agents",
           ],
         },
         {
@@ -205,16 +131,17 @@ export const Pricing: React.FC = () => {
           featured: true,
           features: [
             "Everything In  Starter +",
-            "Automated SMS / email",
+            "One 1 Video Post  Everyday",
+            "Facebook + Instagram + Tiktok",
+            "Reply to (comments + Dms)",
+            "AI-generated Videos Content",
             "Lead qualification calls",
-            "Appointment booking",
-            "Email and phone outreach",
-            "Weekly reporting",
+            //"Appointment booking",
+            "Automated SMS / email",
             "Dedicated Account Manager",
-            "Unlimited Updates",
           ],
         },
-      
+   
         {
           name: "Scale",
           price: "$3000",
