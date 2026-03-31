@@ -136,12 +136,12 @@ export const Pricing: React.FC = () => {
             "Reply to (comments + Dms)",
             "AI-generated Videos Content",
             "Lead qualification calls",
-            //"Appointment booking",
-            "Automated SMS / email",
+            "Appointment booking",
+            //"Automated SMS / email",
             "Dedicated Account Manager",
           ],
         },
-   
+  
         {
           name: "Scale",
           price: "$3000",
@@ -191,7 +191,6 @@ export const Pricing: React.FC = () => {
 
     <a  href={'#contact'}>
       <Button variant={tier.featured ? "white" : "primary"} className="w-full">
-        {/* Select {tier.name}  */}
         Book Free Consultation
       </Button>
     </a>

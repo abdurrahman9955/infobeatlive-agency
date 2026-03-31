@@ -31,25 +31,16 @@ export const Button = ({ children, variant, className, href}: { children: React.
       <div className="relative z-10 text-center max-w-full px-6">
         
         <p className="text-lg sm:text-xl font-extrabold tracking-tight text-blue-600 mb-6">
-              {/* Helping local businesses dominate */}
                   Put Your Business Growth On 
               <br/>
-              {/* since 2018 */} Complete Autopilot. 
+               Complete Autopilot. 
         </p>
         <h1 className="text-3xl max-sm:text-xl lg:text-4xl  font-extrabold leading-tight text-black mb-6 drop-shadow-lg">
-          {/* Your Website Should Be Your <br />
-          <span className="">Best Salesperson.</span> */}
-
-        {/* Put Your Business Growth On Complete Autopilot. */}
-
           Your Website Should Be Your Most<br />
           <span className="">Profitable Employee.</span>
 
         </h1>
         <p className="text-base sm:text-lg text-yellow-500 font-bold mb-10 max-w-3xl mx-auto">
-          {/* We build high-performance websites and solutions for professionals, and local business that 
-          turn clicks into confirmed bookings. No fluff. Just growth. */}
-
           We build intelligent websites and AI voice solutions for professionals that qualify leads and book 
           your calendar. No fluff. Just growth.
         </p>
@@ -71,8 +62,6 @@ export const Button = ({ children, variant, className, href}: { children: React.
               </p>
           </div>
         </div>
-
-        {/* Get Your Website Now */}
 
          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button variant="gradient" className="w-full sm:w-auto px-6 sm:px-8 py-4 text-md sm:text-xl" href="#contact">
