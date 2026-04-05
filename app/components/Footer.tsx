@@ -22,7 +22,7 @@ export const Footer: React.FC = () => (
             <li><a href="#testimonials" className="hover:text-blue-500 transition-colors">Testimonials</a></li>
           </ul>
         </div>
-       
+      
         <div>
           <h4 className="text-white font-bold mb-6">Connect</h4>
           <div className="grid grid-cols-1 gap-4">

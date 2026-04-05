@@ -1,13 +1,16 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import {   Menu,  X, } from 'lucide-react';
+import {   CopyIcon, Menu,  PhoneCall,  X, } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import { Button } from './Button';
+import Link from 'next/link';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+   const Number = '+234 70 1111 4377';
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -24,6 +27,12 @@ export const Navbar: React.FC = () => {
     { name: 'Faqs', href: '#faqs' },
     { name: 'Blogs', href: '#blogs' },
   ];
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(Number);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 
@@ -56,7 +65,17 @@ export const Navbar: React.FC = () => {
                   {link.name}
                 </a>
               ))}
-              <Button href="#contact" variant="primary" className="py-2 text-sm max-lg:hidden">Book Free Consultation</Button>
+
+              <Button onClick={handleCopy} 
+              //target="_blank"  rel="noopener noreferrer"
+              //href="https://cal.com/infobeatlive-o2otbh/simple-consultation" 
+              variant="gradient" className="py-2 gap-1.5 text-sm max-lg:hidden">
+                {/* Book Free Consultation */}
+              <PhoneCall size={18} />  {Number} 
+              {copied ? <CopyIcon size={24} /> : <CopyIcon size={14} />}
+              {/* <CopyIcon size={14} /> {copied ? 'Copied!' : 'Copy'} */}
+              </Button>
+        
             </div>
           </div>
           <div className="md:hidden">
@@ -87,8 +106,20 @@ export const Navbar: React.FC = () => {
                 </a>
               ))}
 
+             
               <div className="px-3 pt-4">
-                <Button href="#contact" className="w-full">Book Free Consultation</Button>
+             
+                <Button onClick={handleCopy} variant='gradient'
+                //target="_blank" variant='gradient' rel="noopener noreferrer"  
+               // href="https://cal.com/infobeatlive-o2otbh/simple-consultation" 
+                className="w-full gap-2"><PhoneCall size={18} />  {Number} <CopyIcon size={14} /> {copied ? 'Copied!' : 'Copy'}</Button>
+              </div>
+
+              <div className="px-3 pt-4">
+              
+                <Button target="_blank"  rel="noopener noreferrer"  
+                href="https://cal.com/infobeatlive-o2otbh/simple-consultation" 
+                className="w-full">Book Free Consultation</Button>
               </div>
              
             </div>

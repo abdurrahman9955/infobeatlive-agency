@@ -2,15 +2,16 @@
 import React from 'react';
 import { SparklesIcon, ChartBarIcon } from '@heroicons/react/24/solid';
 import { Globe, Zap } from 'lucide-react';
+import PromoBarHome from './Blogs/Home';
 
-export const Button = ({ children, variant, className, href}: { children: React.ReactNode; variant: 'gradient' | 'outline'; className?: string; href: string; }) => {
+export const Button = ({ children,target,  rel, variant, className, href}: { children: React.ReactNode; target?:'_blank';  rel?:'noopener noreferrer'; variant: 'gradient' | 'outline'; className?: string; href: string; }) => {
   const baseClasses = 'font-bold rounded-full transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-4';
   const variantClasses = {
     gradient: 'text-white bg-gradient-to-r from-blue-600 to-purple-700 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-opacity-50',
     outline: 'text-black border border-black hov er:text-blue-500 hov er:bg-gray-900 focus:ring-white focus:ring-opacity-50',
   } as const;
   return (
-    <a href={href} className={`${baseClasses} ${variantClasses[variant]} ${className}`}>
+    <a href={href} target={target}  rel={rel} className={`${baseClasses} ${variantClasses[variant]} ${className}`}>
       {children}
     </a>
   );
@@ -27,8 +28,10 @@ export const Button = ({ children, variant, className, href}: { children: React.
         <div className="absolute w-96 h-96 bg-yellow-500 opacity-90 rounded-full -bottom-40 -right-40 animate-blob animation-delay-2000"></div>
         <div className="absolute w-64 h-64 bg-purple-500 opacity-90 rounded-full top-1/4 left-1/2 animate-blob animation-delay-4000"></div>
       </div>
-      
+
       <div className="relative z-10 text-center max-w-full px-6">
+
+        {/* <PromoBarHome /> */}
         
         <p className="text-lg sm:text-xl font-extrabold tracking-tight text-blue-600 mb-6">
                   Put Your Business Growth On 
@@ -43,6 +46,10 @@ export const Button = ({ children, variant, className, href}: { children: React.
         <p className="text-base sm:text-lg text-yellow-500 font-bold mb-10 max-w-3xl mx-auto">
           We build intelligent websites and AI voice solutions for professionals that qualify leads and book 
           your calendar. No fluff. Just growth.
+
+          {/* We help businesses automatically capture, qualify, and book more customers using 
+          AI — without hiring staff. */}
+          
         </p>
 
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-8 place-items-center mb-12">
@@ -64,10 +71,13 @@ export const Button = ({ children, variant, className, href}: { children: React.
         </div>
 
          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <Button variant="gradient" className="w-full sm:w-auto px-6 sm:px-8 py-4 text-md sm:text-xl" href="#contact">
-            <SparklesIcon className="h-7 w-7 mr-2 inline-block" />Book Free Consultation
 
+          <Button variant="gradient" className="w-full sm:w-auto px-6 sm:px-8 py-4 text-md sm:text-xl" 
+            target="_blank"  rel="noopener noreferrer"
+            href="https://cal.com/infobeatlive-o2otbh/simple-consultation">
+            <SparklesIcon className="h-7 w-7 mr-2 inline-block" />Book Free Consultation
           </Button>
+
           <Button variant="outline" className="w-full sm:w-auto px-6 sm:px-8  py-4 text-md sm:text-xl" href="#pricing">
             <ChartBarIcon className="h-7 w-7 mr-2 inline-block" /> See Our All Plans Now
           </Button>

@@ -111,56 +111,90 @@ export const Pricing: React.FC = () => {
       subscriptions: [
         {
           name: "Starter",
-          price: "$299",
+          price: "$99",
           interval: "mo",
           features: [
+
             "Website + hosting",
             "Contact forms",
-            "Website chat",
-            "Email notifications",
+            "Live Chat Widget",
             "Booking & calendar sync",
-            "Follow-up reminders",
-            "CRM & Automations",
-            "Full ai voice call agents",
+            "Email notifications",
+            "Follow-up reminders (simple)",
+
+            // "Website + hosting",
+            // "Contact forms",
+            // "Website chat",
+            // "Email notifications",
+            // "Booking & calendar sync",
+            // "Follow-up reminders",
+            // "CRM & Automations",
+            // "Full ai voice call agents",
           ],
         },
         {
           name: "Growth",
-          price: "$1499",
+          price: "$199",
           interval: "mo",
           featured: true,
           features: [
-            "Everything In  Starter +",
-            "One 1 Video Post  Everyday",
-            "Facebook + Instagram + Tiktok",
-            "Reply to (comments + Dms)",
-            "AI-generated Videos Content",
+
+            "Everything in Starter",
+            "AI voice call agent", 
             "Lead qualification calls",
-            "Appointment booking",
-            //"Automated SMS / email",
-            "Dedicated Account Manager",
+            "Appointment booking automation",
+            "Follow-up reminders (Advanced)",
+            "Smart automation workflows",
+
+            // "Everything In  Starter +",
+            // "One 1 Video Post  Everyday",
+            // "Facebook + Instagram + Tiktok",
+            // "Reply to (comments + Dms)",
+            // "AI-generated Videos Content",
+            // "Lead qualification calls",
+            // "Appointment booking",
+            // //"Automated SMS / email",
+            // "Dedicated Account Manager",
           ],
         },
-  
+ 
         {
           name: "Scale",
-          price: "$3000",
+          price: "$500",
           interval: "mo",
           features: [
-            "Everything In Growth +",
-            "Paid Ads Management",
-            "Ad campaign setup",
-            "AI-generated Ads Content",
+
+            "Everything in Growth",
+            "Paid ads management (Meta + Google)",
+            "Ad creatives (AI-generated)",
             "Weekly reporting",
-            "Meta + Google Ads",
-            "Dedicated Account Manager",
-            "Unlimited Updates",
+            "Dedicated manager",
+            "Unlimited updates",
+
+            // "Everything In Growth +",
+            // "Paid Ads Management",
+            // "Ad campaign setup",
+            // "AI-generated Ads Content",
+            // "Weekly reporting",
+            // "Meta + Google Ads",
+            // "Dedicated Account Manager",
+            // "Unlimited Updates",
 
           ],
         },
       ],
     },
   };
+
+  // For Quick Consultation → 5224838
+  // Simple Consultation → 5224824
+  // Full Consultation → 5223365
+
+  // Electricians
+  // Plumbers
+  // Roofing Experts
+  // Real Estate
+  // Painters
 
   const PricingTier = ({ tier, sub = false }: { tier: PricingTierProps; sub?: boolean; }) => (
     <div className={`p-8 rounded-3xl flex flex-col transition-all ${
@@ -189,7 +223,7 @@ export const Pricing: React.FC = () => {
       </ul>
 
 
-    <a  href={'#contact'}>
+     <a  href={'https://cal.com/infobeatlive-o2otbh/simple-consultation'} target="_blank"  rel="noopener noreferrer">
       <Button variant={tier.featured ? "white" : "primary"} className="w-full">
         Book Free Consultation
       </Button>

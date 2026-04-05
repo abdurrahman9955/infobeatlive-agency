@@ -35,6 +35,17 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
         <Analytics />
         {children}
+
+        <Script
+          src="https://widget.retellai.com/chat-widget.js"
+          strategy="afterInteractive"
+          data-public-key="public_key_537c25f81d4e7374a56bd"
+          data-agent-id="agent_aea705e2f5921b95cd3677309b"
+          data-title="Chat with us"
+          data-color="#0A74DA"
+          data-bot-name="Support"
+        />
+        
       </body>
     </html>
   );
