@@ -2,7 +2,6 @@
 import React from 'react';
 import { SparklesIcon, ChartBarIcon } from '@heroicons/react/24/solid';
 import { Globe, Zap } from 'lucide-react';
-import PromoBarHome from './Blogs/Home';
 
 export const Button = ({ children,target,  rel, variant, className, href}: { children: React.ReactNode; target?:'_blank';  rel?:'noopener noreferrer'; variant: 'gradient' | 'outline'; className?: string; href: string; }) => {
   const baseClasses = 'font-bold rounded-full transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-4';
@@ -31,8 +30,6 @@ export const Button = ({ children,target,  rel, variant, className, href}: { chi
 
       <div className="relative z-10 text-center max-w-full px-6">
 
-        {/* <PromoBarHome /> */}
-        
         <p className="text-lg sm:text-xl font-extrabold tracking-tight text-blue-600 mb-6">
                   Put Your Business Growth On 
               <br/>
@@ -47,9 +44,6 @@ export const Button = ({ children,target,  rel, variant, className, href}: { chi
           We build intelligent websites and AI voice solutions for professionals that qualify leads and book 
           your calendar. No fluff. Just growth.
 
-          {/* We help businesses automatically capture, qualify, and book more customers using 
-          AI — without hiring staff. */}
-          
         </p>
 
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-8 place-items-center mb-12">

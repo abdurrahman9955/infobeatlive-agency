@@ -26,13 +26,13 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
          "data-public-key": "public_key_537c25f81d4e7374a56bd",
          "data-agent-id": "agent_aea705e2f5921b95cd3677309b",
          "data-title": "Chat with David",
-         "data-logo-url":"/chat-logo.png",
+         //"data-logo-url":"/chat-logo.png",
          "data-color": "#0A84DA",
          "data-bot-name": "David",
          "data-popup-message": "Hi 👋 Need help?",
          "data-show-ai-popup": "true",
          "data-show-ai-popup-time": "5",
-         "data-auto-open":"true", }}/>
+         "data-auto-open":"false", }}/>
       
          {/* <Script
            id="retell-widget"
