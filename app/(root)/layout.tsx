@@ -17,6 +17,42 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
     <html lang="en">
        <head>
 
+        <Script
+         id="retell-widget"
+         src="https://dashboard.retellai.com/retell-widget.js"
+         strategy="afterInteractive"
+        type="module"
+        {...{
+         "data-public-key": "public_key_537c25f81d4e7374a56bd",
+         "data-agent-id": "agent_aea705e2f5921b95cd3677309b",
+         "data-title": "Chat with David",
+         "data-logo-url":"/chat-logo.png",
+         "data-color": "#0A84DA",
+         "data-bot-name": "David",
+         "data-popup-message": "Hi 👋 Need help?",
+         "data-show-ai-popup": "true",
+         "data-show-ai-popup-time": "5",
+         "data-auto-open":"false", }}/>
+       
+         {/* <Script
+           id="retell-widget"
+           src="https://dashboard.retellai.com/retell-widget.js"
+           type="module"
+           data-public-key="YOUR_RETELL_PUBLIC_KEY"
+           data-agent-id="YOUR_CHAT_AGENT_ID"
+           data-agent-version="YOUR_AGENT_VERSION"
+           data-title="YOUR_CUSTOM_TITLE"
+           data-logo-url="YOUR_LOGO_URL"
+           data-color="YOUR_CUSTOM_COLOR"
+           data-bot-name="YOUR_BOT_NAME"
+           data-popup-message="YOUR_POPUP_MESSAGE"
+           data-show-ai-popup="true"
+           data-show-ai-popup-time="5"
+           data-auto-open="false"
+           data-dynamic='{"key": "value"}'
+           data-recaptcha-key="YOUR_GOOGLE_RECAPTCHA_SITE_KEY"
+           ></Script> */}
+
         <Script strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}/>
 
@@ -36,16 +72,6 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
         <Analytics />
         {children}
 
-        <Script
-          src="https://widget.retellai.com/chat-widget.js"
-          strategy="afterInteractive"
-          data-public-key="public_key_537c25f81d4e7374a56bd"
-          data-agent-id="agent_aea705e2f5921b95cd3677309b"
-          data-title="Chat with us"
-          data-color="#0A74DA"
-          data-bot-name="Support"
-        />
-        
       </body>
     </html>
   );
