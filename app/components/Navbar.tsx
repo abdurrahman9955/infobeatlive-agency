@@ -4,7 +4,6 @@ import {   CopyIcon, Menu,  PhoneCall,  X, } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import { Button } from './Button';
-import Link from 'next/link';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,13 +66,9 @@ export const Navbar: React.FC = () => {
               ))}
 
               <Button onClick={handleCopy} 
-              //target="_blank"  rel="noopener noreferrer"
-              //href="https://cal.com/infobeatlive-o2otbh/simple-consultation" 
               variant="gradient" className="py-2 gap-1.5 text-sm max-lg:hidden">
-                {/* Book Free Consultation */}
               <PhoneCall size={18} />  {Number} 
               {copied ? <CopyIcon size={24} /> : <CopyIcon size={14} />}
-              {/* <CopyIcon size={14} /> {copied ? 'Copied!' : 'Copy'} */}
               </Button>
         
             </div>
@@ -110,8 +105,6 @@ export const Navbar: React.FC = () => {
               <div className="px-3 pt-4">
              
                 <Button onClick={handleCopy} variant='gradient'
-                //target="_blank" variant='gradient' rel="noopener noreferrer"  
-               // href="https://cal.com/infobeatlive-o2otbh/simple-consultation" 
                 className="w-full gap-2"><PhoneCall size={18} />  {Number} <CopyIcon size={14} /> {copied ? 'Copied!' : 'Copy'}</Button>
               </div>
 

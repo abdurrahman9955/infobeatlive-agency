@@ -12,7 +12,6 @@ import Faqs from "../components/Faqs";
 import BlogsList from "../components/Blogs/Blogs";
 import { useEffect, useState } from "react";
 import { Mail, Globe, Home, Award } from "lucide-react";
-import PromoBarHome from "../components/Blogs/Home";
 
 type Language = 'en' | 'ha';
 type TabId = 'home' | 'services' | 'contact' | 'pricing' ;

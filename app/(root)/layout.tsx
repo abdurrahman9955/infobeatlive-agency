@@ -32,8 +32,8 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
          "data-popup-message": "Hi 👋 Need help?",
          "data-show-ai-popup": "true",
          "data-show-ai-popup-time": "5",
-         "data-auto-open":"false", }}/>
-       
+         "data-auto-open":"true", }}/>
+      
          {/* <Script
            id="retell-widget"
            src="https://dashboard.retellai.com/retell-widget.js"
