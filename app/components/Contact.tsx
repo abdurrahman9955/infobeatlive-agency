@@ -84,7 +84,8 @@ export default function Contact() {
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">WhatsApp / Recommended</p>
                     <p className="text-lg font-bold text-slate-900 hover:text-green-600 transition-colors cursor-pointer">
-                        <a href="tel:+2347011114377">+234 70 1111 4377</a>
+                        {/* <a href="tel:+2347011114377">+234 70 1111 4377</a> */}
+                        <a href="tel:+1(762)533-8385">+1 (762) 533-8385</a>
                     </p>
                   </div>
                 </div>
@@ -271,7 +272,7 @@ export default function Contact() {
                       <span>Submit Your Message</span>
                       <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </button>
-                    
+                   
                      <p className="text-center text-xs text-slate-400 mt-4">
                       No spam. Ever. Your data is 100% secure.
                     </p>

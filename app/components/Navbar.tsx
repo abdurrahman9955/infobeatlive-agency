@@ -8,7 +8,8 @@ import { Button } from './Button';
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-   const Number = '+234 70 1111 4377';
+   const Number = '+1 (762) 533-8385';
+  //  '+234 70 1111 4377';
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -103,9 +104,9 @@ export const Navbar: React.FC = () => {
 
              
               <div className="px-3 pt-4">
-             
                 <Button onClick={handleCopy} variant='gradient'
-                className="w-full gap-2"><PhoneCall size={18} />  {Number} <CopyIcon size={14} /> {copied ? 'Copied!' : 'Copy'}</Button>
+                className="w-full gap-2"><PhoneCall size={18} />  {Number} 
+                <CopyIcon size={14} /> {copied ? 'Copied!' : 'Copy'}</Button>
               </div>
 
               <div className="px-3 pt-4">

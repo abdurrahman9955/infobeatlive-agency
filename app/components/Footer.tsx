@@ -30,14 +30,16 @@ export const Footer: React.FC = () => (
               hover:text-white transition-all"><MessageSquare size={18} /><span className='ml-2'>Contact us</span> </a>
           
              <a href="tel:+2347011114377" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
-              hover:text-white transition-all"><PhoneCall size={18} /> <span className='ml-2'>WhatsApp +23470 1111 4377</span></a>
+              hover:text-white transition-all"><PhoneCall size={18} /> <span className='ml-2'>Call +1 (762) 533-8385</span></a>
+
+              {/* WhatsApp +23470 1111 4377 */}
 
             <a href="mailto:infobeatlive@gmail.com" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
               hover:text-white transition-all"><Mail size={18} /><span className='ml-2'>infobeatlive@gmail.com</span></a>
           
           </div>
         </div>
-     
+    
         <div>
           <h4 className="text-white font-bold mb-6">Company</h4>
              <div className="flex flex-col mt-3 gap-3">
