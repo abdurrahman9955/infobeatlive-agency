@@ -8,7 +8,8 @@ import { Button } from './Button';
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-   const Number = '+1 (762) 533-8385';
+  const Number = '+234 70 1111 4377';
+  //  '+1 (762) 533-8385';
   //  '+234 70 1111 4377';
   const [copied, setCopied] = useState(false);
 

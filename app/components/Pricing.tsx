@@ -27,14 +27,14 @@ function detectRegion(): Region {
     // INTERNATIONAL NIGERIA
 
     if (region && africanCountries.includes(region)) {
-      return "INTERNATIONAL";
+      return "NIGERIA";
     }
     if (tz?.startsWith("Africa/")) {
-      return "INTERNATIONAL";
+      return "NIGERIA";
     }
   } catch {}
 
-  return "INTERNATIONAL";
+  return "NIGERIA";
 }
 
 
@@ -47,61 +47,46 @@ export const Pricing: React.FC = () => {
       subscriptions: [
         {
           name: "Starter",
-          price: "₦30,000",
+          price: "₦60,000",
           interval: "mo",
           features: [
-            "Website hosting",
-            "Contact forms",
-            "Booking system",
-            "Email notifications",
-            "Basic SMS/WhatsApp alerts",
-  
-            "Security & Backups",
-            "Technical Support",
-            "SEO Content",
-            "Minor Content Edits",
+           "Up to 3–5 pages",
+           //  "Home, About, Services, Contact, Footer ",
+           //  (Home, About, Services, Contact, Footer)
+           "Mobile-responsive design",
+           "Clean and professional layout",
+           "Contact form integration",
+           "Basic SEO setup"
           ],
         },
         
         {
           name: "Growth",
-          price: "₦50,000",
+          price: " ₦120,000",
           interval: "mo",
           featured: true,
           features: [
-            "Website + hosting",
-            "Contact forms",
-            "Website chat",
-            "Booking & calendar sync",
-            "Automated SMS / WhatsApp / email",
-            "Follow-up reminders",
-            "Basic CRM",
-
-            "SEO Content",
-            "Security & Backups",
-            "Technical Support",
-            "Monthly Analytics",
-            "Minor Content Edits",
+            "Up to 6–10 pages",
+            "Everything in Basic, plus",
+            "Project/portfolio showcase",
+            "Image gallery for past works",
+            "WhatsApp chat integration",
+            "Better performance & design",
+            "On-page SEO optimization",
           ],
         },
         {
           name: "Scale",
-          price: "₦100,000",
+          price: "₦300,000",
           interval: "mo",
           features: [
-            "Website + hosting",
-            "Contact forms",
-            "Website chat",
-            "Booking & calendar sync",
-            "Automated SMS / WhatsApp / email",
-            "Follow-up reminders",
-            "Advanced CRM",
-
-            "Advanced automations",
-            "Paid Ads Management",
-            "Monthly optimization",
-            "Dedicated Account Manager",
-            "Unlimited Updates",
+            "Unlimited pages",
+            "Everything in Standard, plus",
+            "Design tailored to your brand",
+            "Categories & filtering system",
+            "Blog/news section",
+            "Google Maps integration",
+            "Premium design features",
           ],
         },
       ],
@@ -114,22 +99,12 @@ export const Pricing: React.FC = () => {
           price: "$99",
           interval: "mo",
           features: [
-
             "Website + hosting",
             "Contact forms",
             "Live Chat Widget",
             "Booking & calendar sync",
             "Email notifications",
             "Follow-up reminders (simple)",
-
-            // "Website + hosting",
-            // "Contact forms",
-            // "Website chat",
-            // "Email notifications",
-            // "Booking & calendar sync",
-            // "Follow-up reminders",
-            // "CRM & Automations",
-            // "Full ai voice call agents",
           ],
         },
         {
@@ -138,23 +113,12 @@ export const Pricing: React.FC = () => {
           interval: "mo",
           featured: true,
           features: [
-
             "Everything in Starter",
             "AI voice call agent", 
             "Lead qualification calls",
             "Appointment booking automation",
             "Follow-up reminders (Advanced)",
             "Smart automation workflows",
-
-            // "Everything In  Starter +",
-            // "One 1 Video Post  Everyday",
-            // "Facebook + Instagram + Tiktok",
-            // "Reply to (comments + Dms)",
-            // "AI-generated Videos Content",
-            // "Lead qualification calls",
-            // "Appointment booking",
-            // //"Automated SMS / email",
-            // "Dedicated Account Manager",
           ],
         },
  
@@ -163,23 +127,12 @@ export const Pricing: React.FC = () => {
           price: "$500",
           interval: "mo",
           features: [
-
             "Everything in Growth",
             "Paid ads management (Meta + Google)",
             "Ad creatives (AI-generated)",
             "Weekly reporting",
             "Dedicated manager",
             "Unlimited updates",
-
-            // "Everything In Growth +",
-            // "Paid Ads Management",
-            // "Ad campaign setup",
-            // "AI-generated Ads Content",
-            // "Weekly reporting",
-            // "Meta + Google Ads",
-            // "Dedicated Account Manager",
-            // "Unlimited Updates",
-
           ],
         },
       ],
@@ -239,8 +192,8 @@ export const Pricing: React.FC = () => {
 
         <SectionHeading subtitle="Simple Pricing" title="Clear pricing. Zero hidden fees."
         description="We design and build professional websites and tools that convert, scale, and perform."/>
-{/* 
-        <div className="flex justify-center hid den gap-2 mb-6">
+
+        {/* <div className="flex justify-center hid den gap-2 mb-6">
           {(["NIGERIA", "INTERNATIONAL"] as Region[]).map((r) => (
             <button
               key={r}
@@ -254,7 +207,7 @@ export const Pricing: React.FC = () => {
               {r === "NIGERIA" ? "Nigeria" : "International"}
             </button>
           ))}
-        </div> */}
+        </div>  */}
 
 {/*    
         <div className="grid lg:grid-cols-3 gap-8">

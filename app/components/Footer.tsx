@@ -28,9 +28,9 @@ export const Footer: React.FC = () => (
           <div className="grid grid-cols-1 gap-4">
             <a href="#contact" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
               hover:text-white transition-all"><MessageSquare size={18} /><span className='ml-2'>Contact us</span> </a>
-          
+             {/* +1 (762) 533-8385 */}
              <a href="tel:+2347011114377" className="w-auto h-8 bg-s late-800 rounded-lg flex items-center justify-start pl-2
-              hover:text-white transition-all"><PhoneCall size={18} /> <span className='ml-2'>Call +1 (762) 533-8385</span></a>
+              hover:text-white transition-all"><PhoneCall size={18} /> <span className='ml-2'>Call +234 70 1111 4377</span></a>
 
               {/* WhatsApp +23470 1111 4377 */}
 

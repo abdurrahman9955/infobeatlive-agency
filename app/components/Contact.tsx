@@ -84,8 +84,8 @@ export default function Contact() {
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">WhatsApp / Recommended</p>
                     <p className="text-lg font-bold text-slate-900 hover:text-green-600 transition-colors cursor-pointer">
-                        {/* <a href="tel:+2347011114377">+234 70 1111 4377</a> */}
-                        <a href="tel:+1(762)533-8385">+1 (762) 533-8385</a>
+                        <a href="tel:+2347011114377">+234 70 1111 4377</a>
+                        {/* <a href="tel:+1(762)533-8385">+1 (762) 533-8385</a> */}
                     </p>
                   </div>
                 </div>
